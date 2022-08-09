@@ -1,0 +1,241 @@
+    /******* FONT ********/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    background-color: hsl(204, 8%, 12%);
+    overflow-x: hidden;
+}
+
+header{
+    height: 100vh;
+    background-color: black;
+}
+
+.slider{
+    z-index: 0;
+    position: absolute;
+    top: -18%;
+    opacity: 0.55;
+}
+
+.slider img{
+    height: 135vh;
+    width: 100vw;
+}
+
+.header_inner{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    width: 100vw;
+    text-align: center;
+}
+
+.header_logo img{
+    width: 22%;
+    height: 22%;
+}
+
+.header_menu{
+    width: 35vw;
+}
+
+.main_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.main_menu a{
+    text-decoration:none;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+.main_menu li{
+    margin-right: 5%;
+}
+
+.main_menu a:hover{
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    color: hsl(120, 100%, 80%);
+    transition: color .5s;
+
+}
+
+.services_container{
+    position: relative;
+    z-index: 1;
+    padding-top: 7%;
+    background-color: hsl(204, 8%, 12%);
+}
+
+.title_container{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.cards_container{
+    display: grid;
+    grid-template-columns: [first] auto [line2] auto [line3] auto [end];
+    grid-template-rows: [row1-start] auto [row1-end] auto [third-line] auto [last-line];
+    text-align: center;
+    margin-right: 3%;
+    margin-left: 6%;
+}
+
+.card{
+    margin-bottom: 10%;
+}
+
+.cardImg img{
+    opacity: 0.7;
+    width: 85%;
+    position: relative;
+    z-index: 0;
+    transition-property: opacity;
+    transition-duration: .7s;
+}
+
+.cardImg img:hover{
+    transition: opacity .7s;
+    opacity: 0.5;
+}
+
+
+.card h3{
+    position: absolute;
+    font-weight: bold;
+    z-index: 1;
+    width: 30%;
+    margin-top: 9%;
+}
+
+.price_container{
+    margin-top: 10%;
+}
+
+.container_price_list{
+    background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.price_list{
+    text-decoration:none;
+    padding: 6%;
+}
+
+.price_list li{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+.price_list p{
+    margin-top: 2.4%;
+    margin-left: 5%;
+}
+
+.price_list img{
+    width: 7%;
+    border-radius: 50%;
+}
+
+.sg-services_line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: grey;
+    margin-top: 3.5%;
+    margin-left: 5%;
+}
+
+.price{
+    color: hsl(120, 100%, 80%);
+}
+
+.makeReservation{
+    position: relative; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    background-image: url('/content/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.makeReservation::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.title_reservationBox{
+    position: relative;
+    margin-bottom: 5%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.button_container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.styled {
+    padding: 0 20px;
+    line-height: 3;
+    font-size: 1em;
+    text-align: center;
+    color: hsl(120, 100%, 80%);
+    border: solid;
+    border-radius: 100px;
+    border-width: 2px;
+    border-color: hsl(120, 100%, 80%);
+    background-color: rgba(0, 0, 0, 0);
+    transition-property: color, border-color;
+    transition-duration: .5s;
+}
+
+.styled:hover {
+    border-color: white;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    border: solid red;
+    width: 100vw;
+}
+
+/*https://www.codeur.com/tuto/css/creer-diaporama-image-html-css/#creer_un_diaporama_dimages_en_css_uniquement*/
