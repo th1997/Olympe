@@ -54,6 +54,10 @@ header.low_opacity::before {
     right: 3%;
 }
 
+.fa-angle-left{
+    margin-right: 10px;
+    opacity: 0.5;
+}
 
 /***** Conteneur prix *****/
 .price_container{ margin-top: 20% }
@@ -137,4 +141,34 @@ header.low_opacity::before {
 .styled:hover {
     border-color : white;
     color: white;
+}
+
+
+/***** FOOTER *****/
+footer{
+    background-color: black;
+    width: 100vw;
+    padding-bottom: 10%;
+}
+
+.footer_logo{ text-align: center }
+
+.footer_logo img{
+    margin-top: 4%;
+    width: 50%;
+}
+
+.widgetFooter{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.dayTime{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.title_widget{
+    margin-bottom: 7%;
 }
