@@ -1,9 +1,9 @@
 document.getElementById("prev_button_nav").addEventListener("click", prevPic);
 document.getElementById("next_button_nav").addEventListener("click", nextPic);
 
-var listUrlBackground = ["url('/content/slide1.jpg')",
-				"url('/content/slide2.jpg')",
-				"url('/content/slide1(1).jpg')"];
+var listUrlBackground = ["url('content/slide1.jpg')",
+				"url('content/slide2.jpg')",
+				"url('content/slide1(1).jpg')"];
 
 var positionTab = 0;
 

@@ -16,7 +16,7 @@ html {
 header{
     height: 100vh;
     background-color: black;
-    background-image: url('/content/slide1.jpg');
+    background-image: url('content/slide1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -101,7 +101,7 @@ header.low_opacity::before {
     margin: 30% 5% 10% 5%;
     padding-top: 8%;
     padding-bottom: 4%;
-    background-image: url('/content/cta-bg.jpg');
+    background-image: url('content/cta-bg.jpg');
     background-size: cover;
     background-position: center;
 }
