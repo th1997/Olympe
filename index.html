@@ -5,80 +5,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Olympe</title>
-		<link rel="stylesheet" href="style/styleTest.css">
-		<link rel="icon" href="content/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/HamburgerMenu.css">
+		<link rel="icon" href="content/tab_icon.png" type="image/x-icon">
 	</head>
 
 	<body>
-		<header>
-			<div class="slider">
-				<img src="/content/slide1.jpg">
-			</div>
+		<header id="headerBG" class="low_opacity">
 			<div class="header_inner">
 				<div class="header_logo">
-					<a href="#">
-						<img src="/content/logo_Org.svg" alt="Heaven Salon">
+					<a href="index.html">
+						<img src="/content/logo_Org.png" alt="Heaven Salon">
 					</a>
 				</div>
-				<nav class="header_menu">                                                                
+				<nav id="head_menu" class="header_menu">
 					<ul class="main_menu">
 						<li>
 							<a href="index.html" aria-current="page">ACCUEIL</a></li>
 						<li>
-							<a href="reservation.html">RÉALISATIONS</a></li>
+							<a href="">RÉALISATIONS</a></li>
 						<li>
 							<a href="#">ÉVÉNEMENTS</a></li>
 						<li>
-							<a href="#">RÉSERVATION</a></li>
+							<a href="reservation.html">RÉSERVATION</a></li>
 						<li>
 							<a href="https://themesarea.com/heaven/reservations/">CONTACT</a></li>
 					</ul>		
 				</nav>
+				<a href="#" id="openBtn" class="fa-solid fa-bars"></a>
+				<div class="button_nav">
+					<div id="prev_button_nav" class="fas fa-angle-left fa-2xl"></div>
+					<div id="next_button_nav" class="fas fa-angle-right fa-2xl"></div>
+				</div>
 			</div>
 		</header>
-		<div class="services_container">
-			<h1 class="title_container">
-				Nos Services
-			</h1>
-			<div class="cards_container">
-				<div class="card">
-					<h3>Manicure & Pedicure</h3>
-					<div class="cardImg">
-						<img src="/content/pic7.jpg" alt="">
-					</div>
-				</div>
-				<div class="card">
-					<h3>Hair & Treatments</h3>
-					<div class="cardImg">
-						<img src="/content/pic5.jpg" alt="">
-					</div>
-				</div>
-				<div class="card">
-					<h3>Massage & Wellness</h3>
-					<div class="cardImg">
-						<img src="/content/pic3.jpg" alt="">
-					</div>
-				</div>
-				<div class="card">
-					<h3>Eyebrows & Eyelashes</h3>
-					<div class="cardImg">
-						<img src="/content/pic2.jpg" alt="">
-					</div>
-				</div>
-				<div class="card">
-					<h3>Cosmetics & Equipment</h3>
-					<div class="cardImg">
-						<img src="/content/pic1.jpg" alt="">
-					</div>
-				</div>
-				<div class="card">
-					<h3>Hair removal & waxing</h3>
-					<div class="cardImg">
-						<img src="/content/pic6.jpg" alt="">
-					</div>
-				</div>					  
-			</div>
-		</div>
 		<div class="price_container">
 			<h1 class="title_container">
 				Nos prix
@@ -113,30 +73,27 @@
 				</ul>
 			</div>
 		</div>
-		<div class="makeReservation">
+		<div class="makeReservation low_opacity">
 			<p class="title_reservationBox">
 				Prendre un rendez-vous
 			</p>
 			<div class="button_container">
-				<button class="styled"
-				type="button">
-					Nous contacter par téléphone
-				</button>
-				<button class="styled"
-						type="button">
-					Nous contacter par mail
-				</button>
-				<button class="styled"
-						type="button">
-					Rendez-vous en ligne
-				</button>
+				<a href="tel:+33770301132">
+					<button class="styled"
+					type="button">Nous contacter par téléphone</button>
+				</a>
+				<a href="mailto:pharmaciedelasambre@gmail.com">
+					<button class="styled"
+					type="button">Nous contacter par mail</button>
+				</a>
+				<a href="/reservation.html">
+					<button class="styled"
+						type="button">Rendez-vous en ligne</button>
+				</a>
 			</div>
 		</div>
-		<footer>
-			<div class="footer_logo">
-				<img src="/content/logo_Org.svg" alt="Heaven Salon">
-			</div>
-		</footer>
-		<script src="index.js"></script>
+		<script src="/scripts/slider.js"></script>
+		<script src="/scripts/HamburgerMenu.js"></script>
+		<script src="https://kit.fontawesome.com/10d3d228c1.js" crossorigin="anonymous"></script>
 	</body>
 </html>

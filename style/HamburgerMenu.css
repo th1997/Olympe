@@ -1,0 +1,59 @@
+/* Sidenav menu */
+.header_menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: black;
+    padding-top: 40px;
+    transition: left 0.5s ease;
+  }
+  
+  .header_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* menu links */
+  .header_menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Active class */
+  .header_menu.active {
+    left: 0;
+    transition: .5s;
+  }
+
+  #openBtn.active{
+    left: 210px;
+    padding: 25px 25px 25px 50px;
+    transition: .5s;
+  }
+
+  #openBtn{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    font-size: 2.2em;
+    text-decoration: none;
+    transition: left 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 25px 25px 40px;
+    border-radius: 50%;
+}
+
+.main_menu a:hover{
+  transition-property: color;
+  transition-duration: 4s;
+  transition-delay: 2s;
+  color: hsl(120, 100%, 80%);
+  transition: color .5s;
+}

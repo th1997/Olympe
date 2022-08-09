@@ -1,0 +1,140 @@
+/******* FONT ********/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    background-color: hsl(204, 8%, 12%);
+    overflow-x: hidden;
+}
+
+header{
+    height: 100vh;
+    background-color: black;
+    background-image: url('/content/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header_inner{ 
+    position: relative;
+    height: 100vh;
+}
+
+.header_logo{
+    padding-top: 6%;
+    width: 100vw;
+    text-align: center;
+}
+
+.header_logo img{ width: 85% }
+
+header.low_opacity::before {
+    height: 100vh;
+}
+
+.low_opacity::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.button_nav {
+    position: absolute;
+    bottom: 2.5%;
+    right: 3%;
+}
+
+
+/***** Conteneur prix *****/
+.price_container{ margin-top: 20% }
+
+
+.title_container{
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.container_price_list{
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.price_list{
+    text-decoration:none;
+    padding: 8%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.price_list img{
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 1%;
+}
+
+.sg-services_line{
+    opacity: 0;
+    border: solid red;
+}
+
+.price{ 
+    color: hsl(120, 100%, 80%);
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+
+/***** Passer une réservation *****/
+.makeReservation{
+    position: relative; 
+    margin: 30% 5% 10% 5%;
+    padding-top: 8%;
+    padding-bottom: 4%;
+    background-image: url('/content/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.title_reservationBox{
+    position: relative;
+    margin-bottom: 13%;
+    font-size: 3em;
+    text-align: center;
+}
+
+.button_container{
+    position: relative;
+    text-align: center;
+}
+
+.styled {
+    margin-bottom: 8%;
+    padding: 0 20px;
+    line-height: 3;
+    font-size: 0.9em;
+    text-align: center;
+    color: hsl(120, 100%, 80%);
+    border: solid;
+    border-radius: 100px;
+    border-width: 2px;
+    border-color: hsl(120, 100%, 80%);
+    background-color: rgba(0, 0, 0, 0);
+    transition-property: color, border-color;
+    transition-duration: .5s;
+}
+
+.styled:hover {
+    border-color : white;
+    color: white;
+}
