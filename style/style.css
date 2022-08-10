@@ -16,7 +16,6 @@ html {
 header{
     height: 100vh;
     background-color: black;
-    background-image: url('../content/slide1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -34,7 +33,7 @@ header{
 
 .header_logo img{ width: 85% }
 
-header.low_opacity::before {
+header .low_opacity::before{
     height: 100vh;
 }
 
@@ -167,8 +166,47 @@ footer{
     display: flex;
     justify-content: space-between;
     margin-bottom: 4%;
+    margin-right: 5%;
 }
 
 .title_widget{
     margin-bottom: 7%;
 }
+
+/*http://www.templatemonsterpreview.com/fr/demo/232498.html?_gl=1*ipb209*_ga*MTcwMTAzMzgzLjE2NTkzNjAyMjc.*_ga_FTPYEGT5LY*MTY2MDE0MDYxOC4yLjEuMTY2MDE0MDY2OC4xMA..&_ga=2.11327730.711635632.1660140619-170103383.1659360227*/
+
+/***** SLIDER *****/  
+.slides-container {
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    flex: 1 0 100%;
+    background-size: cover;
+    background-position: center;
+}
+  
+.slide:nth-child(1) {
+    background-image: url('../content/slide1.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('../content/slide2.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('../content/slide1(1).jpg');;
+    margin: 0;
+  }
+  
