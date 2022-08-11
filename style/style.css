@@ -55,7 +55,12 @@ header .low_opacity::before{
 
 .fa-angle-left{
     margin-right: 10px;
-    opacity: 0.5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fa-angle-right{
+    cursor: pointer;
 }
 
 /***** Conteneur prix *****/
@@ -101,7 +106,7 @@ header .low_opacity::before{
 /***** Passer une réservation *****/
 .makeReservation{
     position: relative; 
-    margin: 30% 5% 10% 5%;
+    margin: 30% 5% 30% 5%;
     padding-top: 8%;
     padding-bottom: 4%;
     background-image: url('../content/cta-bg.jpg');
@@ -189,6 +194,28 @@ footer{
     padding: 0;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 1px;
+    width: 25px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active {
+    background-color: white;
+}
+
+.dotsContainer{
+    position: absolute;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .slide {
     width: 100vw;
     height: 100vh;
@@ -210,3 +237,8 @@ footer{
     margin: 0;
   }
   
+
+/***** Max 600px screen *****/
+@media screen and (min-width: 600px) {
+    .price_container{ margin-top: 10% }
+}
