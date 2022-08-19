@@ -29,9 +29,9 @@
 							<li>
 								<a href="index.html" aria-current="page">ACCUEIL</a></li>
 							<li>
-								<a href="">RÉALISATIONS</a></li>
+								<a href="realisation.html">RÉALISATIONS</a></li>
 							<li>
-								<a href="#">ÉVÉNEMENTS</a></li>
+								<a href="events.html">ÉVÉNEMENTS</a></li>
 							<li>
 								<a href="reservation.html">RÉSERVATION</a></li>
 							<li>
@@ -50,28 +50,55 @@
 					</div>
 				</div>
 		</header>
-		<!--
 		<div class="price_container">
 			<h1 class="title_container">
 				Nos prix
 			</h1>
-			<div class="container_price_list">
-				<ul class="slides-container" id="slides-container">
-					<li class="slide"></li>
-					<li class="slide"></li>
-					<li class="slide"></li>
-			  	</ul>
-			 	<div class="button_nav">
-					<div id="prev_button_nav" class="fas fa-angle-left fa-2xl"></div>
-					<div id="next_button_nav" class="fas fa-angle-right fa-2xl"></div>
+			<div id="frame">
+				<input type="radio" name="frame" id="frame1" checked />
+				<input type="radio" name="frame" id="frame2" />
+				<input type="radio" name="frame" id="frame3" />
+				<input type="radio" name="frame" id="frame4" />
+				<div id="slides">
+					<div id="overflow">
+						<div class="inner">
+							<div class="frame frame_1">
+								<div class="frame-content">
+									<h2>Slide 1</h2>
+								</div>
+							</div>
+							<div class="frame frame_2">
+								<div class="frame-content">
+									<h2>Slide 2</h2>
+								</div>
+							</div>
+							<div class="frame frame_3">
+								<div class="frame-content">
+									<h2>Slide 3</h2>
+								</div>
+							</div>
+							<div class="frame frame_4">
+								<div class="frame-content">
+									<h2>Slide 4</h2>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			  	<div class="dotsContainer" style="text-align:center">
-					<span class="dot"></span> 
-					<span class="dot"></span> 
-					<span class="dot"></span> 
+				<div id="controls">
+					<label for="frame1"></label>
+					<label for="frame2"></label>
+					<label for="frame3"></label>
+					<label for="frame4"></label>
+				</div>
+				<div id="bullets">
+					<label for="frame1"></label>
+					<label for="frame2"></label>
+					<label for="frame3"></label>
+					<label for="frame4"></label>
 				</div>
 			</div>
-		</div>-->
+		</div>
 		<div class="makeReservation low_opacity">
 			<p class="title_reservationBox">
 				Prendre un rendez-vous
@@ -81,7 +108,7 @@
 					<button class="styled"
 					type="button">Nous contacter par téléphone</button>
 				</a>
-				<a href="mailto:pharmaciedelasambre@gmail.com">
+				<a href="mailto:olympecoiffures@gmail.com">
 					<button class="styled"
 					type="button">Nous contacter par mail</button>
 				</a>
@@ -105,7 +132,7 @@
 					<div class="opening_day">
 						<div id="Lundi" class="dayTime today">
 							<div class="day">LUNDI</div>
-							<div class="timeOpen">Fermé</div>
+							<div class="timeOpen">FERMÉ</div>
 						</div>
 						<div id="Mardi" class="dayTime">
 							<div class="day">MARDI</div>
