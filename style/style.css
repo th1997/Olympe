@@ -65,7 +65,10 @@ header .low_opacity::before{
 
 /***** Conteneur prix *****/
 
-.price_container{ margin: 5% }
+.price_container{ 
+    position: relative;
+    margin: 5% 
+}
 
 .title_container{
     text-align: center;
@@ -74,7 +77,6 @@ header .low_opacity::before{
 
 .frame-content{
     display: grid;
-    border: solid red;
 }
 
 #frame input[type=radio] {
@@ -89,6 +91,10 @@ header .low_opacity::before{
 #overflow {
     width: 100%;
     overflow: hidden;
+}
+
+.inner.low_opacity::before{
+    top: 8.4vh;
 }
   
 #frame1:checked~#slides .inner {
@@ -118,7 +124,7 @@ header .low_opacity::before{
     line-height: 0;
     height: 75vh;
 }
-  
+
 #slides .frame {
     margin-right: 1%;
     width: 24%;
@@ -132,6 +138,37 @@ header .low_opacity::before{
     background-position: center;
 }
 
+#slides .frame-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.line_prc{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.frame-content .title_optn, .frame-content .short_prc{ 
+    color: black;
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+.frame-content .long_prc{ 
+    color: hsl(120, 100%, 80%);
+}
+
+#slides .frame-content:hover{
+    background-color : rgba(0,0,0,0.5);
+}
+
+#slides .frame-content:hover .title_optn, #slides .frame-content:hover .short_prc{
+    color : white;
+}
 
 #slides .frame_1 {
     background-image: url("/content/prixslide1_MOD.jpg");
@@ -310,4 +347,4 @@ footer{
 
 
 /* POUR LE SLIDE TACCTILE
-https://blog.internet-formation.fr/2019/01/creer-un-menu-lateral-swipe-menu-avec-touch-events-et-click-en-css-3-et-javascript-natif/*/
+https://blog.internet-formation.fr/2019/01/creer-un-menu-lateral-swipe-menu-avec-touch-events-et-click-en-css-3-et-javascript-natif/*/7
